@@ -1,11 +1,6 @@
 /* global */
 :root {
-  height: 100%;
-}
-body {
-  background-color: rgb(235, 235, 235);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  margin: 0;
+  font-size: 1.3rem;
 }
 h1,
 h2,
@@ -14,99 +9,146 @@ h4,
 h5,
 h6 {
   text-transform: capitalize;
+  margin: 0;
+  padding: 0;
 }
-header {
-  background-color: #6761a8;
-
-  width: 100%;
-  height: 80px;
-}
-header {
-  color: white;
-  border-bottom: 3px solid #c44900;
-}
-header h1 {
-  float: left;
-}
-
-header h1 span {
-  color: #c44900;
-}
-header nav {
-  display: block;
-  float: right;
-  margin-right: 8vw;
-  margin-top: 30px;
-}
-header nav a {
-  text-decoration: none;
-  color: white;
-  margin: 15px 5px;
-}
-header nav a:hover {
-  font-size: 1.2rem;
-}
-header nav .actual {
-  color: #c44900;
-}
-#sectionhome {
-  color: white;
-  text-align: center;
-  min-height: 30vh;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.5),
-      rgba(0, 0, 0, 0.5),
-      rgba(255, 255, 255, 0.5)
-    ),
-    url("../img/background.jpg");
-
-  padding-top: 50px;
-  box-sizing: border-box;
-}
-#sectionhome h1,
-#sectionhome p {
-  margin: 10px 15%;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e6fafc;
 }
 .container {
-  padding: 0px 50px;
+  width: 80%;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+a {
+  text-decoration: none;
   color: white;
-  height: 60px;
-  background-color: #6761a8;
 }
-.container .newsletter h5 {
-  float: left;
-  margin-top: 20px;
-}
-
-.container .newsletter form {
-  float: right;
-  margin-top: 20px;
+.actual {
+  color: #4da167;
+  font-weight: bold;
 }
 button {
-  background-color: #c44900;
-  border: 0;
+  border: none;
+  height: 31px;
+  color: white;
+  background-color: #4da167;
+}
+
+/* header */
+header {
+  color: white;
+  background-color: #515b3a;
+  border-bottom: 3px solid #4da167;
+  min-height: 66px;
+}
+.headlight {
+  color: rgb(77, 161, 103);
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  display: inline;
+}
+header h2 {
+  float: left;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+header nav {
+  float: right;
+  margin-top: 25px;
+}
+a:hover {
+  font-weight: bold;
+}
+/* mainhome */
+.mainhome {
+  min-height: 400px;
+  background-image: linear-gradient(
+      rgba(77, 161, 103, 0.6),
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8),
+      rgba(77, 161, 103, 0.6)
+    ),
+    url("../img/background.jpg");
+  color: #353d2f;
+  text-align: center;
+  display: inline-block;
+}
+.mainhome h1 {
+  margin-top: 10%;
+}
+.newsletter {
+  color: white;
+  background-color: #515b3a;
+  min-height: 70px;
+}
+.newsletter h3 {
+  margin-top: 15px;
+  float: left;
+}
+.newsletter form {
+  margin-top: 15px;
+  float: right;
+}
+
+.newsletter input {
+  height: 25px;
 }
 .boxes {
-  max-height: 70vh;
+  margin-top: 30px;
+}
+.box1 {
+  width: 30%;
+  display: inline-block;
+  margin-right: 15px;
+  margin-left: 15px;
   text-align: center;
-}
-.boxes .box1 {
-  width: 33%;
-  display: inline-block;
-}
-.boxes .box2 {
-  width: 33%;
-  display: inline-block;
-}
-.boxes .box3 {
-  width: 33%;
-  display: inline-block;
 }
 footer {
-  display: block;
+  background-color: #4da167;
   text-align: center;
+  padding-top: 15px;
+  min-height: 35px;
+}
+
+.mainabout h4 {
+  margin-top: 20px;
+}
+.dark {
   color: white;
-  background-color: #c44900;
-  margin-bottom: 0px;
-  bottom: 0;
+  background-color: #515b3a;
+  padding: 15px;
+}
+.mainabout article,
+.services {
+  width: 65%;
+  display: inline-block;
+}
+.mainabout aside,
+.mainservices aside {
+  width: 30%;
+
+  float: right;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+.mainservices {
+  margin-top: 20px;
+}
+.mainservices aside p {
+  margin: 0;
+}
+.blockservices {
+  background-color: #9cfc97;
+  margin-top: 5px;
+}
+#message {
+  padding-bottom: 15px;
 }

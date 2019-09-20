@@ -4,72 +4,86 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Acme Web Design | Services</title>
+    <title>ATB Web Design | Services</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
     <header>
-      <h1><span>acme</span> web design</h1>
-      <nav>
-        <a href="index.html">HOME</a>
-        <a href="about.html" class="actual">ABOUT</a>
-        <a href="services.html">SERVICES</a>
-      </nav>
+      <div class="container">
+        <h2><span class="headlight">atb</span> web design</h2>
+        <nav>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="services.html" class="actual">SERVICES</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-
-    <div class="newsletter">
-      <p>subscribe to our newsletter</p>
-      <form action="">
-        <input type="email" placeholder="Enter email..." />
-        <button>Subscribe</button>
-      </form>
-    </div>
-    <section>
-      <h4>services</h4>
-      <div>
-        <h3>Website Design</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum molestiae
-          rem sit commodi minima. A, excepturi aliquam? Iusto voluptatum, optio
-          atque architecto voluptate expedita excepturi in, nemo ipsam ducimus
-          at.
-        </p>
-        <p>Pricing:$1,000-$3000</p>
-      </div>
-      <div>
-        <h3>Website Maintenance</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum molestiae
-          rem sit commodi minima. A, excepturi aliquam? Iusto voluptatum, optio
-          atque architecto voluptate expedita excepturi in, nemo ipsam ducimus
-          at.
-        </p>
-        <p>Pricing:$250 per month</p>
-      </div>
-      <div>
-        <h3>Website Hosting</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum molestiae
-          rem sit commodi minima. A, excepturi aliquam? Iusto voluptatum, optio
-          atque architecto voluptate expedita excepturi in, nemo ipsam ducimus
-          at.
-        </p>
-        <p>Pricing:$25 per month</p>
+    <section class="newsletter">
+      <div class="container">
+        <h3>suscribe to our newsletter</h3>
+        <form action="">
+          <input type="email" placeholder="Enter Email..." />
+          <button>Suscribe</button>
+        </form>
       </div>
     </section>
-    <aside>
-      <h4>Get A Quote</h4>
-      <form action="">
-        <h5>Name</h5>
-        <input type="text" placeholder="Name" />
-        <h5>Email</h5>
-        <input type="email" placeholder="Email Address" />
-        <h5>Message</h5>
-        <input type="text" placeholder="Message" />
-      </form>
-      <button>Send</button>
-    </aside>
-    <footer>Acme Web Design,copyright &copy; 2017</footer>
+    <section class="mainservices">
+      <div class="container">
+        <section class="services">
+          <h4>services</h4>
+          <section class="blockservices">
+            <h3>website design</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
+              dolores amet veniam vitae, voluptates et maiores aliquid possimus
+              non! Obcaecati cumque consequatur molestias possimus laudantium
+              earum nulla explicabo nihil. Dicta.
+            </p>
+            <p>Pricing:$1,000-$3,000</p>
+          </section>
+          <section class="blockservices">
+            <h3>website design</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
+              dolores amet veniam vitae, voluptates et maiores aliquid possimus
+              non! Obcaecati cumque consequatur molestias possimus laudantium
+              earum nulla explicabo nihil. Dicta.
+            </p>
+            <p>Pricing:$250 per month</p>
+          </section>
+          <section class="blockservices">
+            <h3>website design</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
+              dolores amet veniam vitae, voluptates et maiores aliquid possimus
+              non! Obcaecati cumque consequatur molestias possimus laudantium
+              earum nulla explicabo nihil. Dicta.
+            </p>
+            <p>Pricing:$25 per month</p>
+          </section>
+        </section>
+        <aside>
+          <form action="" class="dark">
+            <h3>get a quote</h3>
+            <p>Name</p>
+            <input type="text" placeholder="Name" />
+            <p>Email</p>
+            <input type="email" placeholder="Email address" />
+            <p>Message</p>
+            <input type="text" placeholder="Message" id="message" />
+            <button>Send</button>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <h5>atb web design, copyright &copy; 2017</h5>
+      </div>
+    </footer>
   </body>
 </html>
