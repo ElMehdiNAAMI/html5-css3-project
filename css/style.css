@@ -1,4 +1,5 @@
 /* global */
+
 :root {
   font-size: 1.3rem;
 }
@@ -54,15 +55,17 @@ ul {
 }
 li {
   display: inline;
+  margin: 5px 10px;
 }
 header h2 {
   float: left;
-  margin-top: 15px;
+  padding-top: 15px;
   margin-bottom: 0;
 }
 header nav {
   float: right;
   margin-top: 25px;
+  padding-bottom: 10px;
 }
 a:hover {
   font-weight: bold;
@@ -90,7 +93,7 @@ a:hover {
   min-height: 70px;
 }
 .newsletter h3 {
-  margin-top: 15px;
+  padding-top: 15px;
   float: left;
 }
 .newsletter form {
@@ -146,9 +149,35 @@ footer {
   margin: 0;
 }
 .blockservices {
-  background-color: #9cfc97;
+  background-color: #515b3a;
   margin-top: 5px;
+  color: #e6fafc;
+  padding: 5px 15px;
 }
 #message {
   padding-bottom: 15px;
+}
+.mainservices aside input {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  header h2,
+  header nav,
+  .newsletter h3,
+  .newsletter form,
+  .box1,
+  .mainservices section,
+  .mainservices aside,
+  .mainabout article,
+  .mainabout aside {
+    text-align: center;
+    float: none;
+    width: 100%;
+  }
+  button,
+  input {
+    width: 100%;
+    border: none;
+    margin-bottom: 10px;
+  }
 }
